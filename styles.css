@@ -1,22 +1,75 @@
 body {
-    font-family: Arial, sans-serif;
-    margin: 20px;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
 }
 
 h1 {
     text-align: center;
+    margin-bottom: 20px;
 }
 
 form {
+    display: flex;
+    flex-direction: column;
     margin-bottom: 20px;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input[type="text"] {
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+button {
+    padding: 5px 10px; /* Adjusted padding for smaller buttons */
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
 }
 
 .book {
     border: 1px solid #ccc;
     padding: 10px;
     margin-bottom: 10px;
+    background-color: #fff;
 }
 
 .book button {
     margin-left: 10px;
+}
+
+.book button:hover {
+    background-color: #007bff;
+}
+
+.book-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.book-status {
+    font-weight: bold;
+    color: #28a745; /* Green color for "available" status */
+}
+
+.book-status.borrowed {
+    color: #dc3545; /* Red color for "borrowed" status */
 }
